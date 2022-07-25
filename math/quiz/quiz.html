@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+   
+    <div class="board" id="board">
+      <h3 id="time">Süre:</h3>
+      <h3 id="point">Puan:</h3>
+      <p id="qp1">1</p>
+      <p id="qp2">2</p>
+      <p id="qp3">3</p>
+      <p id="qp4">4</p>
+      <p id="qp5">5</p>
+      <p id="qp6">6</p>
+      <p id="qp7">7</p>
+      <p id="qp8">8</p>
+      <p id="qp9">9</p>
+      <p id="qp10">10</p>
+    </div>
+    <div class="main" id="main">
+      <div class="question">
+        <p>1. Dört basamaklı sayıların en küçüğü nedir?</p>
+        <input type="radio" name="q1" value="1000" onclick="control(1,'1000')" />
+        1000 <br />
+        <input type="radio" name="q1" value="100" onclick="control(1,'100')" />
+        100<br />
+        <input type="radio" name="q1" value="99" onclick="control(1,'99')" />
+        99<br />
+        <input type="radio" name="q1" value="999" onclick="control(1,'999')" />
+        999
+      </div>
+      <div class="question">
+        <p>2. Dört basamaklı sayıların en büyüğü nedir?</p>
+        <input
+          type="radio"
+          name="q2"
+          value="1000"
+          onclick="control(2,'1000')"
+        />
+        1000 <br />
+        <input type="radio" name="q2" value="100" onclick="control(2,'100')" />
+        100<br />
+        <input type="radio" name="q2" value="100" onclick="control(2,'99')" />
+        99<br />
+        <input type="radio" name="q2" value="100" onclick="control(2,'9999')" />
+        9999
+      </div>
+      <div class="question">
+        <p>
+          3. 102 , 109 ve 98 sayılarını küçükten büyüğe sıralayın. (Şu şekilde
+          yazılmalı : 1 < 2 < 3 ) <br /><input
+            type="text"
+            name="q3"
+            onblur="control(3,value)"
+          />
+        </p>
+      </div>
+      <div class="question">
+        <p>4. 106 sayısının onluğa yuvarladığınızda sonuç nedir?</p>
+        <input type="text" name="q4" onblur="control(4,value)" />
+      </div>
+      <div class="question">
+        <p>
+          5. Ahmet Bey 1000 TL değerinde takım elbise, 500 TL değerinde
+          ayakkabı, 20 TL değerinde kemer almıştır. Ahmet Bey başlangıçta 2000
+          TL'ye sahipse, şu an ne kadarı vardır?
+        </p>
+        <input
+          type="radio" name="q5" value="1000" onclick="control(5,'1000')"    />
+        1000 <br />
+        <input type="radio" name="q5" value="530" onclick="control(5,'530')" />
+        530<br />
+        <input type="radio" name="q5" value="480" onclick="control(5,'480')" />
+        480<br />
+        <input type="radio" name="q5" value="620" onclick="control(5,'620')" />
+        620
+      </div>
+      <div class="question">
+        <p>
+          6. 7 + 7 = ? <br /><input
+            type="text"
+            name="q6"
+            onblur="control(6,value)"
+          />
+        </p>
+      </div>
+      <div class="question">
+        <p>
+          7. 5 - 2 = ? <br /><input
+            type="text"
+            name="q7"
+            onblur="control(7,value)"
+          />
+        </p>
+      </div>
+      <div class="question">
+        <p>
+          8. 3 x 2 = ? <br /><input
+            type="text"
+            name="q8"
+            onblur="control(8,value)"
+          />
+        </p>
+      </div>
+      <div class="question">
+        <p>
+          9. 6 / 2 = ? <br /><input
+            type="text"
+            name="q9"
+            onblur="control(9,value)"
+          />
+        </p>
+      </div>
+      <div class="question">
+        <p>10. 6 sayısını 4'e böldüğünüzde kalan kaçtır?</p>
+        <input type="radio" name="q10" value="1" onclick="control(10,'1')" />
+        1 <br />
+        <input type="radio" name="q10" value="3" onclick="control(10,'3')" />
+        3<br />
+        <input type="radio" name="q10" value="4" onclick="control(10,'4')" />
+        4<br />
+        <input type="radio" name="q10" value="2" onclick="control(10,'2')" />
+        2
+      </div>
+      <button id="submit">GÖNDER</button>
+
+
+    </div>
+    <div id="gizli">
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
